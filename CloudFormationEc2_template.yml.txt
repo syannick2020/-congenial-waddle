@@ -1,0 +1,12 @@
+AWStTemplateFormatVersion: "2010-09-09"
+Description: Ec2_instance creation
+  Resources:
+      InstanceID:
+      Type: Aws::Ec2::Instance #
+  Properties:
+      ImageID: "ami-032930428bf1abbff" #Amazon Machine Image#
+      InstanceType: t2.micro    
+      Keyname: demokey2020            #Key to remotely access#
+      SecurityGroups: 
+       - default              #Default VPC Security Group#
+
